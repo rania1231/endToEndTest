@@ -1,17 +1,12 @@
 package proxiad.rhamdi.customerservice.mapper;
 
 import org.assertj.core.api.AssertionsForClassTypes;
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import proxiad.rhamdi.customerservice.dto.CustomerDTO;
 import proxiad.rhamdi.customerservice.entities.Customer;
-
 import java.util.List;
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 
 class CustomerMapperTest {
