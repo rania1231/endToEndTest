@@ -1,4 +1,4 @@
-package proxiad.rhamdi.customerservice.entities;
+package proxiad.rhamdi.customerservice.dto;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,10 +8,14 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
-@Entity
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder @ToString
-public class Customer {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@ToString
+public class CustomerDTO {
     private Long id;
     @NotEmpty
     @Size(min=2)
