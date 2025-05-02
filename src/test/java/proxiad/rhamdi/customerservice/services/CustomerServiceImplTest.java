@@ -7,6 +7,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.context.ActiveProfiles;
 import proxiad.rhamdi.customerservice.dto.CustomerDTO;
 import proxiad.rhamdi.customerservice.entities.Customer;
 import proxiad.rhamdi.customerservice.exception.EmailAlreadyExistExceprion;
@@ -18,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+@ActiveProfiles("test")
 @ExtendWith(MockitoExtension.class)
 class CustomerServiceImplTest {
     @Mock
